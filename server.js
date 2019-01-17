@@ -52,6 +52,12 @@ app.get('/bad', (req, res) => {
     })
 });
 
+app.get('/fastforward', (req, res) => {
+    res.render('fastforward.hbs', {
+        pageTitle: 'fastforward Page'
+    })
+});
+
 app.listen(port, () => {
     console.log(`'Server is up on port ${port}'`)
 });
